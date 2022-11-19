@@ -93,4 +93,23 @@ public class linked_functionality {
         }
         System.out.println("\n"+size);
     }
+    public Node returnHead(){
+        return head;
+    }
+    public void displayRercursivelyReverse(Node n){
+        if(n==null){
+            return;
+        }
+
+        displayRercursivelyReverse(n.next);
+        System.out.println(n.data);
+    }
+    public void displayRercursively(Node n){
+        if(n==null){
+            return;
+        }
+        System.out.println(n.data);
+        displayRercursively(n.next);
+
+    }
 }

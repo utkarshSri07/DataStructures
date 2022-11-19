@@ -14,6 +14,8 @@ public class Main {
 
 
         ll.display();
+        System.out.println(ll.returnHead().data);
+        ll.displayRercursively(ll.returnHead());
 
 
     }
