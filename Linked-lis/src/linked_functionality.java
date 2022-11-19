@@ -112,4 +112,20 @@ public class linked_functionality {
         displayRercursively(n.next);
 
     }
+    public Node insertAtRecursively(Node n,int data,int pos){
+    if(n == null && pos>0){
+        return n;
+     }
+    if(pos==0){
+        Node newNode = new Node(data);
+        newNode.next =n;
+        return newNode;
+    }
+    else {
+        Node smallerNode = insertAtRecursively(n.next,data,pos-1);
+        n.next=smallerNode;
+        return n;
+
+    }
+    }
 }
