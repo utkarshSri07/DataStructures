@@ -13,9 +13,10 @@ public class Main {
         ll.deleteAt(2);
 
 
-        ll.display();
-        System.out.println(ll.returnHead().data);
-        ll.displayRercursively(ll.returnHead());
+       // ll.display();
+       // System.out.println(ll.returnHead().data);
+    // ll.insertAtRecursively(ll.returnHead(),16,3);
+        ll.displayRercursively(ll.insertAtRecursively(ll.returnHead(),16,3));
 
 
     }
